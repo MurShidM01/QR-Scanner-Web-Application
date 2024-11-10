@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced QR Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash">
+        <div class="splash-content">
+            <img src="logo.png" alt="App Logo">
+            <h1>QR Scanner</h1>
+        </div>
+    </div>
+
+    <!-- Main Application -->
+    <div class="container" id="mainApp">
+        <h1>QR Scanner</h1>
+        <div class="scanner-container">
+            <video id="video" autoplay></video>
+            <canvas id="canvas" hidden></canvas>
+        </div>
+        <button id="scanButton">Start Scanning</button>
+        <div id="resultContainer">
+            <p>Scan Result:</p>
+            <span id="result"></span>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/@zxing/library@latest"></script>
+    <script src="script.js"></script>
+</body>
+</html>
